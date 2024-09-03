@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibraWise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Charcoal Grey text */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+section {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 0; /* Remove default border */
+}
+
+section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* Height of the narrow wavy line */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,15 Q150,0 300,15 T600,15 T900,15 T1200,15 L1200,30 L0,30 Z" fill="%23dcdcdc"></path></svg>') no-repeat bottom center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.container {
+    width: 80%; /* Adjusted to 80% for consistency */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #000000; /* Black header */
+    color: #ffffff; /* White text */
+    padding-top: 30px;
+    padding-bottom: 50px; /* Adds space at the bottom for the nav menu */
+    min-height: 120px; /* Ensure there's enough space for both logo and nav */
+    border-bottom: #f7901b 3px solid; /* Gold border */
+    position: relative; /* Allows positioning of child elements */
+    text-align: center; /* Center align text and elements */
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 55px;
+    color: #f7901b; /* Gold logo */
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 20px;
+    color: #ffffff; /* White slogan text */
+    margin-top: 0;
+}
+
+nav {
+    position: absolute; /* Positioning inside the header */
+    left: 20px; /* Moves the menu to the left */
+    bottom: 10px; /* Moves the menu down from the bottom of the header */
+}
+
+nav ul {
+    padding: 0; /* Remove padding */
+    list-style: none; /* No bullet points */
+    margin: 0; /* Remove default margins */
+}
+
+nav ul li {
+    display: inline-block; /* Ensure items stack horizontally */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White nav links */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7901b; /* Gold on hover */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    padding: 20px 0;
+    background-color: #ffffff; /* White background */
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px solid #f7901b; /* Light grey border */
+}
+
+/* Titles color */
+section h1, section h2 {
+    color: #3e4cca; /* Deep Navy Blue titles */
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+    color: #333333; /* Charcoal Grey text */
+}
+
+#software {
+    text-align: left; /* Aligns all text inside the section to the left */
+}
+
+#software ul {
+    padding-left: 20px; /* Adds padding to the left to align list items properly */
+    list-style-position: inside; /* Ensures the bullet points are inside the padding */
+}
+
+#software h2, #software p, #software ul {
+    margin: 0; /* Removes default margins that might affect alignment */
+}
+
+/* Footer Styles */
+footer {
+    background: #000000; /* Black footer */
+    color: #ffffff; /* White footer text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .container p {
+    margin: 0;
+    text-align: center;
+}
+
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">VibraWise</div>
+            <div class="slogan">Empowering Vibration Analysis</div>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Download.html">Download</a></li>
+                    <li><a href="ReferenceMaterials.html">Reference Materials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <body>
+            <h1> Bibliography</h1>
+            <ul>
+                <li>Amabili, M., <em>Nonlinear Vibrations and Stability of Shells and Plates</em>. 2008, New York: Cambridge University Press.</li>
+                <li>Alijani, F. and M. Amabili, "Non-linear vibrations of shells: A literature review from 2003 to 2013." <em>International Journal of Non-Linear Mechanics</em>.</li>
+                <li>Amabili, M. and M.P. Païdoussis, "Review of studies on geometrically nonlinear vibrations and dynamics of circular cylindrical shells and panels, with and without fluid-structure interaction." <em>Applied Mechanics Reviews</em>.</li>
+                <li>Amabili, M., F. Pellicano, and M.P. Païdoussis, "NONLINEAR VIBRATIONS OF SIMPLY SUPPORTED, CIRCULAR CYLINDRICAL SHELLS, COUPLED TO QUIESCENT FLUID." <em>Journal of Fluids and Structures</em></li>
+                <li>Amabili, M., F. Pellicano, and M.P. Païdoussis, "NON-LINEAR DYNAMICS AND STABILITY OF CIRCULAR CYLINDRICAL SHELLS CONTAINING FLOWING FLUID, PART II: LARGE-AMPLITUDE VIBRATIONS WITHOUT FLOW." <em>Journal of Sound and Vibration</em></li>
+                <li>Pellicano, F., M. Amabili, and M.P. Païdoussis, "Effect of the geometry on the non-linear vibration of circular cylindrical shells." <em>International Journal of Non-Linear Mechanics</em>, 2002.</li>
+                <li>Leissa, A.W., <em>Vibration of Shells</em>. 1993, Washington DC: NASA SP-2881973, Government Printing Office, Now available from The Acoustical Society of America, 1993.</li>
+                <li>Pellicano, F. and K.V. Avramov, "Linear and nonlinear dynamics of a circular cylindrical shell connected to a rigid disk." <em>Communications in Nonlinear Science and Numerical Simulation</em>, 2007. </li>
+                <li>Sharma, C., "Free vibrations of clamped-free circular cylinders." <em>Thin-Wall Struct</em>, 1984. 2: p. 175–193.</li>
+                <li>Tottenham, H.S., K., "Analysis of the free vibration of cantilever cylindrical thin elastic shells by the matrix progression method." <em>Int J of Mech Sc</em>, 1972. </li>
+                <li>Warburton, G.B. and J. Higgs, "Natural frequencies of thin cantilever cylindrical shells." <em>Journal of Sound and Vibration</em>, 1970.  </li>
+                <li>Varadan, T.P., G Ramani, HV, "Nonlinear free flexural vibration of thin circular cylindrical shells." <em>AIAA J</em>, 1989.</li>
+                <li>Amabili, M., F. Pellicano, and A.F. Vakakis, "Nonlinear Vibrations and Multiple Resonances of Fluid-Filled, Circular Shells, Part 1: Equations of Motion and Numerical Results." <em>Journal of Vibration and Acoustics</em>, 2000</li>
+                <li>Maewal, A.M., "Evolution equations for axisymmetric shells: Simple strange attractors in structural dynamics." <em>Int J Non-Linear Mech</em>, 1986.</li>
+                <li>Nayfeh, A.R., RA, "Non-linear oscillation of circular cylindrical shells." <em>Int J Solids Struct</em>, 1987. </li>
+                <li>Raouf, R.P., AN, "Nonlinear dynamic response of anisotropic, arbitrarily laminated shell panels: An asymptotic analysis." <em>Compos Struct</em>, 1991. </li>
+                <li>Chiba, M., "Non-linear hydroelastic vibration of a cantilever cylindrical tank—I. Experiment (empty case)." <em>International Journal of Non-Linear Mechanics</em>, 1993.</li>
+                <li>Hatch, M.R., <em>Vibration simulation using MATLAB and ANSYS</em>. 2000: CRC Press.</li>
+                <li>Thompson, M.K. and J.M. Thompson, <em>ANSYS Mechanical APDL for Finite Element Analysis</em>. 2017: Elsevier Science.</li>
+                <li>Meirovitch, L., <em>Elements of Vibration Analysis</em>. New York: McGraw-Hill Publishing Company, 1986.</li>
+                <li>Amabili, M., "A comparison of shell theories for large-amplitude vibrations of circular cylindrical shells: Lagrangian approach." <em>Journal of Sound and Vibration</em>, 2003. </li>
+                <li>Breslavsky, I.D., E.A. Strel’nikova, and K.V. Avramov, "Dynamics of shallow shells with geometrical nonlinearity interacting with fluid." <em>Computers & Structures</em>, 2011.:</li>
+                <li>Parker, T.C., LO, <em>Practical Numerical Algorithms for Chaotic Systems</em>. New York: Springer-Verlag, 1989.</li>
+                <li>Rusanov, A.V., et al., "Modelling 3D Steam Turbine Flow Using Thermodynamic Properties of Steam IAPWS-95." 2016.</li>
+                <li>Kurylov, Y. and M. Amabili, "Nonlinear vibrations of clamped-free circular cylindrical shells." <em>Journal of Sound and Vibration</em>, 2011. </li>
+            </ul>
+        </body>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 VibraWise. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
